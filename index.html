@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Charen Monicha, S.I.Kom.</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            DEFAULT: '#0F172A',
+                            light: '#1E293B',
+                            dark: '#020617'
+                        },
+                        gold: {
+                            DEFAULT: '#D97706',
+                            light: '#F59E0B',
+                            dark: '#B45309'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans leading-relaxed antialiased">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-navy tracking-tight">
+                Charen<span class="text-gold">.</span>
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8 font-medium text-slate-600">
+                <a href="#about" class="hover:text-gold transition-colors">Tentang</a>
+                <a href="#experience" class="hover:text-gold transition-colors">Pengalaman Kerja</a>
+                <a href="#certificates" class="hover:text-gold transition-colors">Sertifikat</a>
+                <a href="#skills" class="hover:text-gold transition-colors">Keahlian</a>
+                <a href="#contact" class="hover:text-gold transition-colors">Kontak</a>
+            </div>
+
+            <a href="#contact" class="hidden md:inline-block bg-navy text-white px-5 py-2.5 rounded-full font-medium hover:bg-gold transition-colors shadow-sm">
+                Hubungi Saya
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION (SAMPUL DEPAN BAHASA INGGRIS) -->
+    <section class="pt-32 pb-20 md:pt-40 md:pb-28 max-w-7xl mx-auto px-6 flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+        <div class="flex-1 text-center md:text-left">
+            <div class="inline-block bg-gold/10 text-gold-dark font-semibold text-sm px-4 py-1.5 rounded-full mb-4">
+                Bachelor of Communication Science (GPA 3.69/4.00)
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-navy tracking-tight mb-4">
+                HELLO, I AM <span class="text-gold">CHAREN MONICHA</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 mb-8 max-w-2xl leading-relaxed">
+                Communication Professional & Administrative Specialist. Experienced in administrative management, Public Relations, institutional coordination, precise data handling, and event protocol.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
+                <a href="#experience" class="w-full sm:w-auto bg-navy text-white text-center px-8 py-3.5 rounded-xl font-semibold hover:bg-gold transition-all duration-300 shadow-md hover:shadow-lg">
+                    View Experience
+                </a>
+                <a href="#certificates" class="w-full sm:w-auto bg-white text-navy border border-slate-300 text-center px-8 py-3.5 rounded-xl font-semibold hover:border-gold hover:text-gold transition-all duration-300">
+                    Certificates & Licenses
+                </a>
+            </div>
+        </div>
+        <div class="flex-1 flex justify-center">
+            <!-- Frame Lingkaran Sesuai Keinginan Kamu -->
+            <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full p-2 bg-gradient-to-tr from-gold to-navy shadow-2xl">
+                <div class="w-full h-full rounded-full overflow-hidden bg-white">
+                    <img src="muka saya untuk cover.jpeg" alt="Charen Monicha" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about" class="py-20 bg-white border-y border-slate-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-navy mb-3">Tentang Saya</h2>
+                <div class="w-16 h-1 bg-gold mx-auto rounded-full"></div>
+            </div>
+
+            <div class="max-w-4xl mx-auto text-lg text-slate-600 leading-relaxed text-center md:text-left space-y-6">
+                <p>
+                    Lulusan S1 Ilmu Komunikasi dari Universitas Islam Negeri Sultan Syarif Kasim Riau dengan IPK 3.69 (Cumlaude). Memiliki fondasi yang kuat di bidang Public Relations, komunikasi organisasi, protokoler acara, hingga pengolahan data administrasi perkantoran.
+                </p>
+                <p>
+                    Terbiasa menangani manajemen data pelanggan, pengarsipan, outbound calling, serta memimpin komunikasi langsung dengan instansi pemerintahan/desa, perangkat pendidik, hingga menjadi protokoler resmi.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-12">
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 text-center">
+                    <i class="fa-solid me-0 fa-location-dot text-3xl text-gold mb-3"></i>
+                    <h3 class="font-bold text-navy text-lg">Domisili</h3>
+                    <p class="text-slate-600">Pekanbaru, Riau</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 text-center">
+                    <i class="fa-solid me-0 fa-graduation-cap text-3xl text-gold mb-3"></i>
+                    <h3 class="font-bold text-navy text-lg">Pendidikan</h3>
+                    <p class="text-slate-600">S1 Ilmu Komunikasi (3.69/4.00)</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 text-center">
+                    <i class="fa-solid me-0 fa-award text-3xl text-gold mb-3"></i>
+                    <h3 class="font-bold text-navy text-lg">TOEFL Score</h3>
+                    <p class="text-slate-600">563 (Prediction Test)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-navy mb-3">Pengalaman Kerja & Pengabdian</h2>
+                <p class="text-slate-600">Pengalaman profesional lengkap beserta dokumentasi foto presisi.</p>
+                <div class="w-16 h-1 bg-gold mx-auto rounded-full mt-3"></div>
+            </div>
+
+            <div class="space-y-16">
+                
+                <!-- Pengalaman 1: Magang Telkom -->
+                <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm flex flex-col md:flex-row items-center gap-8">
+                    <div class="w-full md:w-1/2 h-80 md:h-[360px] rounded-2xl overflow-hidden shadow-inner cursor-pointer relative group bg-slate-100 flex items-center justify-center p-2" onclick="openModal('foto magang telkom/WhatsApp Image 2026-09-13 at 19.45.33.jpeg', 'Magang PT Telkom Indonesia Witel Riau')">
+                        <img src="foto magang telkom/WhatsApp Image 2026-09-13 at 19.45.33.jpeg" alt="Magang Telkom" class="w-full h-full object-contain object-top rounded-lg group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-navy/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-medium gap-2">
+                            <i class="fa-solid me-0 fa-magnifying-glass-plus"></i> Perbesar Foto
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-gold bg-gold/10 px-3 py-1 rounded-full">Magang Industri</span>
+                            <span class="text-sm text-slate-400 font-medium">Sep - Nov 2025</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-navy">Magang Ilmu Komunikasi & Administrasi</h3>
+                        <h4 class="text-gold-dark font-semibold mb-4">PT Telkom Indonesia (Persero) Tbk Witel Riau</h4>
+                        <ul class="list-disc list-inside text-slate-600 space-y-2 text-sm">
+                            <li>Pengelolaan, pengecekan, dan rekapitulasi data pelanggan menggunakan Microsoft Excel & Word secara presisi.</li>
+                            <li>Pencatatan, pengarsipan, dan penyusunan detail tagihan pelanggan secara sistematis untuk kemudahan akses data.</li>
+                            <li>Melakukan <strong>outbound call</strong> kepada pelanggan untuk konfirmasi tagihan secara profesional.</li>
+                            <li>Terlibat aktif dalam koordinasi, persiapan, dan kelancaran kegiatan <strong>CSR & Pemberdayaan UMKM</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pengalaman 2: Pengabdian Desa Tanjung Mas -->
+                <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm flex flex-col md:flex-row-reverse items-center gap-8">
+                    <div class="w-full md:w-1/2 h-80 rounded-2xl overflow-hidden shadow-inner cursor-pointer relative group" onclick="openModal('foto kkn/WhatsApp Image 2026-09-13 at 22.22.53 (1).jpeg', 'Pengabdian Masyarakat Desa Tanjung Mas')">
+                        <img src="foto kkn/WhatsApp Image 2026-09-13 at 22.22.53 (1).jpeg" alt="Pengabdian Desa Tanjung Mas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-navy/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-medium gap-2">
+                            <i class="fa-solid me-0 fa-magnifying-glass-plus"></i> Perbesar Foto
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-navy bg-navy/10 px-3 py-1 rounded-full">Humas & Protokoler</span>
+                            <span class="text-sm text-slate-400 font-medium">2025</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-navy">Divisi Humas, PDD & Protokoler Upacara</h3>
+                        <h4 class="text-gold-dark font-semibold mb-4">Program Pengabdian / KKN Desa Tanjung Mas</h4>
+                        <ul class="list-disc list-inside text-slate-600 space-y-2 text-sm">
+                            <li>Bertindak sebagai Koordinator Humas dalam menjalin hubungan eksternal dan koordinasi intensif dengan Perangkat Desa dan Pendidik Desa Tanjung Mas.</li>
+                            <li>Bertugas sebagai <strong>Protokoler resmi</strong> pada Upacara Peringatan HUT RI 17 Agustus di Desa Tanjung Mas.</li>
+                            <li>Menjadi Tim <strong>PDD (Publikasi, Dekorasi, & Dokumentasi)</strong> dalam menyukseskan seluruh rangkaian acara kemerdekaan 17 Agustus.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pengalaman 3: Asisten Penjualan -->
+                <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm flex flex-col md:flex-row items-center gap-8">
+                    <div class="w-full md:w-1/2 h-80 rounded-2xl overflow-hidden shadow-inner cursor-pointer relative group" onclick="openModal('sertifikatt.jpeg', 'Asisten Penjualan Retail Pakaian')">
+                        <img src="sertifikatt.jpeg" alt="Asisten Penjualan Retail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-navy/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-medium gap-2">
+                            <i class="fa-solid me-0 fa-magnifying-glass-plus"></i> Perbesar Foto
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-gold bg-gold/10 px-3 py-1 rounded-full">Pengalaman Kerja</span>
+                            <span class="text-sm text-slate-400 font-medium">2021 - Sekarang</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-navy">Asisten Penjualan & Pengelolaan Toko</h3>
+                        <h4 class="text-gold-dark font-semibold mb-4">Usaha Keluarga (Retail Pakaian)</h4>
+                        <ul class="list-disc list-inside text-slate-600 space-y-2 text-sm">
+                            <li>Melayani lebih dari 10 pelanggan harian dengan memberikan rekomendasi produk yang ramah dan solutif.</li>
+                            <li>Mengelola transaksi harian, pencatatan administrasi sederhana, dan pengaturan stok >30 produk.</li>
+                            <li>Meningkatkan omzet penjualan bulanan sebesar 20% melalui strategi komunikasi dan pelayanan yang efektif.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pengalaman 4: Kepanitiaan Seminar Praktisi -->
+                <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm flex flex-col md:flex-row-reverse items-center gap-8">
+                    <div class="w-full md:w-1/2 h-80 rounded-2xl overflow-hidden shadow-inner cursor-pointer relative group" onclick="openModal('panitia seminar divisi acara.jpeg', 'Panitia Seminar Praktisi Mengajar')">
+                        <img src="panitia seminar divisi acara.jpeg" alt="Panitia Seminar Divisi Acara" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-navy/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-medium gap-2">
+                            <i class="fa-solid me-0 fa-magnifying-glass-plus"></i> Perbesar Foto
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-navy bg-navy/10 px-3 py-1 rounded-full">Kepanitiaan</span>
+                            <span class="text-sm text-slate-400 font-medium">Mei 2024</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-navy">Divisi Acara</h3>
+                        <h4 class="text-gold-dark font-semibold mb-4">Seminar "Transformasi Komunikasi Organisasi di Era Digital"</h4>
+                        <ul class="list-disc list-inside text-slate-600 space-y-2 text-sm">
+                            <li>Menyusun rundown acara secara detail dan mengelola presensi absensi seluruh peserta.</li>
+                            <li>Memastikan kelancaran alur operasional dan koordinasi narasumber teknis selama kegiatan berlangsung.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pengalaman 5: Pewara Fest -->
+                <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm flex flex-col md:flex-row items-center gap-8">
+                    <div class="w-full md:w-1/2 h-80 rounded-2xl overflow-hidden shadow-inner cursor-pointer relative group bg-slate-100 flex items-center justify-center p-1" onclick="openModal('WhatsApp Image 2026-09-13 at 23.29.05.jpeg', 'Panitia Pewara Fest Tim HID (Humas, Informasi, Dokumentasi)')">
+                        <img src="WhatsApp Image 2026-09-13 at 23.29.05.jpeg" alt="Panitia Pewara Fest Tim HID" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-navy/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-medium gap-2">
+                            <i class="fa-solid me-0 fa-magnifying-glass-plus"></i> Perbesar Foto Tim
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-gold bg-gold/10 px-3 py-1 rounded-full">Kepanitiaan</span>
+                            <span class="text-sm text-slate-400 font-medium">Mei 2025</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-navy">Tim HID (Humas, Informasi, Dokumentasi)</h3>
+                        <h4 class="text-gold-dark font-semibold mb-4">Pewara Fest - Pelatihan Pembawa Acara / MC</h4>
+                        <ul class="list-disc list-inside text-slate-600 space-y-2 text-sm">
+                            <li>Mengelola dokumentasi visual kegiatan dan rekapitulasi administrasi peserta pelatihan.</li>
+                            <li>Bertanggung jawab dalam pembuatan, validasi, dan pencetakan sertifikat peserta pelatihan MC.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATES SECTION -->
+    <section id="certificates" class="py-20 bg-white border-y border-slate-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-navy mb-3">Sertifikat & Lisensi Resmi</h2>
+                <p class="text-slate-600">Bukti kelulusan pelatihan, sertifikasi bahasa, dan partisipasi seminar resmi.</p>
+                <div class="w-16 h-1 bg-gold mx-auto rounded-full mt-3"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Sertifikat Telkom -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="w-full h-48 bg-slate-200 cursor-pointer overflow-hidden relative group p-2 flex items-center justify-center" onclick="openModal('Sertifikat Magang 2025.pdf', 'Sertifikat Magang PT Telkom Indonesia')">
+                            <iframe src="Sertifikat Magang 2025.pdf" class="w-full h-full pointer-events-none rounded"></iframe>
+                            <div class="absolute inset-0 bg-navy/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-medium text-xs gap-2">
+                                <i class="fa-solid me-0 fa-magnifying-glass-plus"></i> Lihat Sertifikat Full
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-semibold text-slate-400">No. TEL-108/PD.000/T1W-0C0K0000/2025</span>
+                            <h3 class="font-bold text-navy text-lg mt-1">Sertifikat Magang PT Telkom Indonesia</h3>
+                            <p class="text-slate-600 text-sm mt-2">Unit Shared Service & General Support Riau. Pengelolaan administrasi, rekap data, dan pelayanan pelanggan.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-0 flex justify-between items-center text-xs text-slate-500 font-medium">
+                        <span>PT Telkom Indonesia</span>
+                        <span>Nov 2025</span>
+                    </div>
+                </div>
+
+                <!-- Sertifikat TOEFL -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="w-full h-48 bg-slate-200 cursor-pointer overflow-hidden relative group p-2 flex items-center justify-center" onclick="openModal('Charen Monicha.pdf', 'Sertifikat TOEFL Prediction Test (Score: 563)')">
+                            <iframe src="Charen Monicha.pdf" class="w-full h-full pointer-events-none rounded"></iframe>
+                            <div class="absolute inset-0 bg-navy/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-medium text-xs gap-2">
+                                <i class="fa-solid me-0 fa-magnifying-glass-plus"></i> Lihat Sertifikat Full
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-semibold text-slate-400">Reg No. 2601133747</span>
+                            <h3 class="font-bold text-navy text-lg mt-1">TOEFL Prediction Test (Score: 563)</h3>
+                            <p class="text-slate-600 text-sm mt-2">Central Course Kampung Inggris Pare. Listening: 49, Structure: 60, Reading: 60.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-0 flex justify-between items-center text-xs text-slate-500 font-medium">
+                        <span>Central Course Pare</span>
+                        <span>Jan 2026 - Jan 2028</span>
+                    </div>
+                </div>
+
+                <!-- Sertifikat MS Excel YEC -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="w-full h-48 bg-slate-200 cursor-pointer overflow-hidden relative group p-2 flex items-center justify-center" onclick="openModal('Charen Monicha - Dasar Microsoft Excel Administrasi Perkantoran (10).pdf', 'Sertifikat Dasar MS Excel Administrasi Perkantoran YEC')">
+                            <iframe src="Charen Monicha - Dasar Microsoft Excel Administrasi Perkantoran (10).pdf" class="w-full h-full pointer-events-none rounded"></iframe>
+                            <div class="absolute inset-0 bg-navy/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-medium text-xs gap-2">
+                                <i class="fa-solid me-0 fa-magnifying-glass-plus"></i> Lihat Sertifikat Full
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-semibold text-slate-400">No. 00174001</span>
+                            <h3 class="font-bold text-navy text-lg mt-1">Dasar MS Excel Administrasi Perkantoran</h3>
+                            <p class="text-slate-600 text-sm mt-2">YEC (Yureka Edukasi Cipta). Menguasai pengolahan data, fungsi IF, LOOKUP, dan Pivot Table.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-0 flex justify-between items-center text-xs text-slate-500 font-medium">
+                        <span>YEC Yogyakarta</span>
+                        <span>Agt 2026</span>
+                    </div>
+                </div>
+
+                <!-- Sertifikat UIN Suska -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="w-full h-48 bg-slate-200 cursor-pointer overflow-hidden relative group p-2 flex items-center justify-center" onclick="openModal('sertifikat.jpeg', 'Sertifikat Seminar Internasional UIN Suska Riau')">
+                            <img src="sertifikat.jpeg" alt="Sertifikat UIN Suska" class="max-h-full max-w-full object-contain rounded">
+                            <div class="absolute inset-0 bg-navy/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-medium text-xs gap-2">
+                                <i class="fa-solid me-0 fa-magnifying-glass-plus"></i> Lihat Sertifikat Full
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-semibold text-slate-400">021/HMPS-AFI-FU/UIN.SUSKA/XI/2022</span>
+                            <h3 class="font-bold text-navy text-lg mt-1">Seminar Internasional "Menjadi Mahasiswa Paripurna"</h3>
+                            <p class="text-slate-600 text-sm mt-2">HMPS AFI Fakultas Ushuluddin UIN Suska Riau.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-0 flex justify-between items-center text-xs text-slate-500 font-medium">
+                        <span>UIN Suska Riau</span>
+                        <span>Nov 2022</span>
+                    </div>
+                </div>
+
+                <!-- Sertifikat GMO -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="w-full h-48 bg-slate-200 cursor-pointer overflow-hidden relative group p-2 flex items-center justify-center" onclick="openModal('foto asisten penjualan.jpeg', 'Sertifikat Seminar & Talkshow Motivasi Internasional GMO')">
+                            <img src="foto asisten penjualan.jpeg" alt="Sertifikat Talkshow GMO" class="max-h-full max-w-full object-contain rounded">
+                            <div class="absolute inset-0 bg-navy/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-medium text-xs gap-2">
+                                <i class="fa-solid me-0 fa-magnifying-glass-plus"></i> Lihat Sertifikat Full
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-semibold text-slate-400">PAN-PEL/43/GMO-HMPS PAI/XII/2022</span>
+                            <h3 class="font-bold text-navy text-lg mt-1">Seminar & Talkshow Motivasi Internasional</h3>
+                            <p class="text-slate-600 text-sm mt-2">GMO & HMPS PAI UIN Suska Riau. "Pemuda Tangguh Inspiratif, Inovatif, & Produktif".</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-0 flex justify-between items-center text-xs text-slate-500 font-medium">
+                        <span>UIN Suska & GMO</span>
+                        <span>Des 2022</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-navy mb-3">Keahlian & Kompetensi Utama</h2>
+                <div class="w-16 h-1 bg-gold mx-auto rounded-full"></div>
+            </div>
+
+            <div class="space-y-10 max-w-4xl mx-auto">
+                <!-- Hard Skills -->
+                <div>
+                    <h3 class="text-lg font-bold text-navy mb-4 flex items-center gap-2">
+                        <i class="fa-solid me-0 fa-laptop text-gold"></i> Hard Skills & Administrasi
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-white border border-slate-200 text-slate-700 font-medium rounded-xl shadow-sm">Microsoft Excel (Seri IF, LOOKUP, Pivot Table)</span>
+                        <span class="px-4 py-2 bg-white border border-slate-200 text-slate-700 font-medium rounded-xl shadow-sm">Microsoft Word & PowerPoint</span>
+                        <span class="px-4 py-2 bg-white border border-slate-200 text-slate-700 font-medium rounded-xl shadow-sm">Pengolahan Data & Pengarsipan Pelanggan</span>
+                        <span class="px-4 py-2 bg-white border border-slate-200 text-slate-700 font-medium rounded-xl shadow-sm">Outbound Calling & Konfirmasi Tagihan</span>
+                        <span class="px-4 py-2 bg-white border border-slate-200 text-slate-700 font-medium rounded-xl shadow-sm">Public Relations Writing</span>
+                        <span class="px-4 py-2 bg-white border border-slate-200 text-slate-700 font-medium rounded-xl shadow-sm">Tim PDD (Publikasi, Dekorasi, Dokumentasi)</span>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div>
+                    <h3 class="text-lg font-bold text-navy mb-4 flex items-center gap-2">
+                        <i class="fa-solid me-0 fa-users text-gold"></i> Soft Skills & Protokoler
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-navy text-white font-medium rounded-xl shadow-sm">Protokoler Upacara Resmi (HUT RI 17 Agustus)</span>
+                        <span class="px-4 py-2 bg-navy text-white font-medium rounded-xl shadow-sm">Koordinasi Perangkat Desa & Instansi Pendidik</span>
+                        <span class="px-4 py-2 bg-navy text-white font-medium rounded-xl shadow-sm">Public Speaking & Presentasi</span>
+                        <span class="px-4 py-2 bg-navy text-white font-medium rounded-xl shadow-sm">Kerja Sama Tim & Koordinasi Acara</span>
+                        <span class="px-4 py-2 bg-navy text-white font-medium rounded-xl shadow-sm">Pemecahan Masalah & Ketelitian Data</span>
+                        <span class="px-4 py-2 bg-navy text-white font-medium rounded-xl shadow-sm">Manajemen Rundown & Waktu</span>
+                    </div>
+                </div>
+
+                <!-- Languages -->
+                <div>
+                    <h3 class="text-lg font-bold text-navy mb-4 flex items-center gap-2">
+                        <i class="fa-solid me-0 fa-language text-gold"></i> Kemampuan Bahasa
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-gold/10 text-gold-dark border border-gold/20 font-medium rounded-xl">Bahasa Indonesia (Aktif & Profesional)</span>
+                        <span class="px-4 py-2 bg-gold/10 text-gold-dark border border-gold/20 font-medium rounded-xl">Bahasa Inggris (TOEFL Score: 563)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-navy mb-3">Hubungi Saya</h2>
+                <p class="text-slate-600">Terbuka untuk kesempatan karir profesional, administrasi, humas, maupun event management.</p>
+                <div class="w-16 h-1 bg-gold mx-auto rounded-full mt-3"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <a href="tel:085930366182" class="p-8 bg-slate-50 hover:bg-gold/10 rounded-2xl border border-slate-100 text-center transition-all group shadow-sm hover:shadow-md">
+                    <div class="w-14 h-14 bg-navy text-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-gold transition-colors">
+                        <i class="fa-solid me-0 fa-phone text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-navy text-lg">Telepon / WhatsApp</h3>
+                    <p class="text-slate-600 mt-1">0859-3036-6182</p>
+                </a>
+
+                <a href="mailto:charenmonica123@gmail.com" class="p-8 bg-slate-50 hover:bg-gold/10 rounded-2xl border border-slate-100 text-center transition-all group shadow-sm hover:shadow-md">
+                    <div class="w-14 h-14 bg-navy text-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-gold transition-colors">
+                        <i class="fa-solid me-0 fa-envelope text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-navy text-lg">Email</h3>
+                    <p class="text-slate-600 mt-1">charenmonica123@gmail.com</p>
+                </a>
+
+                <div class="p-8 bg-slate-50 rounded-2xl border border-slate-100 text-center shadow-sm">
+                    <div class="w-14 h-14 bg-navy text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid me-0 fa-location-dot text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-navy text-lg">Lokasi</h3>
+                    <p class="text-slate-600 mt-1">Pekanbaru, Riau, Indonesia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-navy text-slate-400 py-8 text-center text-sm border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <p>&copy; 2026 Charen Monicha, S.I.Kom. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- IMAGE PREVIEW MODAL -->
+    <div id="imageModal" class="fixed inset-0 bg-black/80 z-50 hidden flex items-center justify-center p-4" onclick="closeModal()">
+        <div class="max-w-4xl w-full bg-white rounded-2xl overflow-hidden shadow-2xl relative" onclick="event.stopPropagation()">
+            <button onclick="closeModal()" class="absolute top-4 right-4 bg-navy/80 hover:bg-navy text-white w-10 h-10 rounded-full flex items-center justify-center z-10 transition-colors">
+                <i class="fa-solid me-0 fa-xmark text-lg"></i>
+            </button>
+            <div class="p-4 flex items-center justify-center bg-slate-100">
+                <iframe id="modalIframe" src="" class="w-full h-[75vh] hidden rounded-xl"></iframe>
+                <img id="modalImg" src="" alt="Preview" class="max-w-full max-h-[75vh] object-contain rounded-xl hidden">
+            </div>
+            <div class="p-4 bg-white border-t border-slate-100 text-center">
+                <p id="modalCaption" class="font-bold text-navy text-lg"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT FOR MODAL -->
+    <script>
+        function openModal(src, caption) {
+            const imgElement = document.getElementById('modalImg');
+            const iframeElement = document.getElementById('modalIframe');
+            document.getElementById('modalCaption').innerText = caption;
+
+            if (src.endsWith('.pdf')) {
+                iframeElement.src = src;
+                iframeElement.classList.remove('hidden');
+                imgElement.classList.add('hidden');
+            } else {
+                imgElement.src = src;
+                imgElement.classList.remove('hidden');
+                iframeElement.classList.add('hidden');
+            }
+
+            document.getElementById('imageModal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').classList.add('hidden');
+            document.getElementById('modalIframe').src = '';
+            document.getElementById('modalImg').src = '';
+        }
+    </script>
+
+</body>
+</html>
